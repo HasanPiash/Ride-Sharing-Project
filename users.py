@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from ride import RideRequest, RideMatching
+
 class User(ABC):
     def __init__(self, name, email, nid)->None:
         self.name=name
