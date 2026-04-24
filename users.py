@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
 from ride import RideRequest, RideMatching
-
+    
 class User(ABC):
     def __init__(self, name, email, nid)->None:
         self.name=name
         self.email=email
         self.nid=nid
         self.wallet=0
-        
+         
     @abstractmethod
     def display_profile(self):
         raise NotImplementedError
@@ -53,7 +53,7 @@ class Driver(User):
         super().__init__(name, email, nid) 
         self.current_location=current_location
         self.wallet=0
-    
+     
     def display_profile(self):
         print(f"Driver Name:{self.name}")
     
